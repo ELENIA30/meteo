@@ -1,35 +1,43 @@
 
-const createCard = (id, description, main, icon) => {
-  console.log(id, description, main, icon);
-  const divEl = document.createElement("div");
-  const idEl = document.createElement("h3");
-  const parDescEl = document.createElement("p");
-  const mainEl = document.createElement("p");
-  const imgEl = document.createElement("img");
+const createCard = (name,description,main,icon) => {
+  const divCard = document.createElement("div");
+  const nameCard = document.createElement("h3");
+  const descriptionCard= document.createElement("p");
+  const mainCard = document.createElement("p");
+  const imgCard = document.createElement("img");
 
 
 
-  divEl.classList.add("card");
-  idEl.classList.add("coord");
-  parDescEl.classList.add("description");
-  imgEl.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  divCard.classList.add("card");
+  nameCard.classList.add("cityName");
+  descriptionCard.classList.add("description");
+  imgCard.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  imgCard.classList.add("cardImg");
+  mainCard.classList.add("mainCard")
 
 
 
-  idEl.textContent = id;
-  parDescEl.textContent = description;
-  mainEl.textContent = main;
+
+  nameCard.textContent = name;
+  descriptionCard.textContent= description;
+  mainCard.textContent= main;
 
 
 
-  divEl.append(idEl, parDescEl, mainEl, imgEl);
-  document.querySelector('.cardsWrapper').appendChild(divEl);
+  divCard.append(nameCard, descriptionCard, mainCard, imgCard);
+  document.querySelector('.cardsWrapper').appendChild(divCard);
 };
 
+const updateCard = (name,description,main,icon) => {
+  const nameCard = document.querySelector(".cityname");
+  const descriptionCard= document.querySelector(".description");
+  const imgCard= document.querySelector(".cardimg");
+  const mainCard= document.querySelector(".mainCard");
 
 
-
-
-
-
-export { createCard };
+  nameCard.textContent = name;
+  descriptionCard.textContent = description;
+  mainCard.textContent = main;
+  imgCard.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+};
+export { createCard,updateCard };
