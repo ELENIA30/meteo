@@ -27,7 +27,7 @@ const createCitiesCards = (cities) => {
 };
 
 const getAPIdata = async (city) => {
-    const api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8d19f834fee6f5ee5a0141a527dcc528&lang=en`)
+    const api = await fetch("http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8d19f834fee6f5ee5a0141a527dcc528&lang=en")
     const res = await api.json();
     return res
 }
