@@ -11,56 +11,61 @@ img {
 
 header{
     background-color: rgb(250, 243, 212);
+    padding: auto;
 }
 header img {
     margin: 10px auto;
 }
 /*testo*/
 #testo h1 {
-    color: rgba(136, 112, 3, 0.872);
+    color: rgba(78, 65, 7, 0.872);
    text-align: center;
    font-family: 'Pacifico', cursive;
-   font-size: 50px;
+   font-size: 30px;
    line-height: 40px;
    padding-bottom: auto;
+   margin-block-end: 10px;
   
 
 }
 h3{
-    color:  rgba(136, 112, 3, 0.872);
+    color: rgba(78, 65, 7, 0.872) ;
 }
 #testo p {
     color: black;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Pacifico', sans-serif;
     text-align: center;
     line-height: 20px;
     padding: 30px;
 }
 
- label {
-    color:rgba(136, 112, 3, 0.872) ;
+label {
+    color: rgba(78, 65, 7, 0.872);
     font-family: 'Pacifico', sans-serif;
     font-size: 20px;
-    padding: auto;
+
 }
-#city{
-    color: black;
-    font-family: 'Exo 2';
-    
-  
-}
+
 .cardsWrapper {
-    width:  250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+.card {
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 0 2px b;
+    background-color:rgb(250, 243, 212) ;
+    border: 2px solid grey;
+    font-family: 'Pacifico',sans-serif;
 }
 footer {
     background:rgb(250, 243, 212)  ;
-    padding: 100px 50px;
+    padding: 50px 50px;
     text-align: center;
     color:rgba(136, 112, 3, 0.872) ;
     font-size: 12px;
@@ -72,6 +77,19 @@ footer a:hover {
     color:rgba(136, 112, 3, 0.872) ;
     text-decoration: none;
 }
-.inputDiv label{
-    
+#city  {
+    color:rgba(78, 65, 7, 0.872);
+   justify-content: space-around;
+   text-align: center;
+   font-family: 'Pacifico';
+}
+#form label {
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+
+}
+body {
+  background-color: darkcyan;
 }
