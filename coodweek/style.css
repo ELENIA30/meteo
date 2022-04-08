@@ -31,6 +31,14 @@ header img {
 h3{
     color: rgba(78, 65, 7, 0.872) ;
 }
+#testo p {
+    color: black;
+    font-family: 'Pacifico', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    padding: 30px;
+}
+
 label {
     color: rgba(78, 65, 7, 0.872);
     font-family: 'Pacifico', sans-serif;
@@ -81,4 +89,9 @@ footer a:hover {
     text-align: center;
     margin-top: 10px;
 
+}
+
+#form{
+    display: flex;
+    justify-content: center;
 }

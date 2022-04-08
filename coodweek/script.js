@@ -51,3 +51,19 @@ getAPIdata(call.value).then((city) => {
     createCard(city.name, city.weather[0].description, city.weather[0].main, city.weather[0].icon); 
 });
 
+
+// const call = document.querySelector("#city");
+// getAPIdata(call.value).then((city) => {
+
+//     createCard(city.name, city.weather[0].description, city.weather[0].main, city.weather[0].icon);
+// })
+
+// call.addEventListener('change', () => {
+//     let city = call.value;
+//     getAPIdata(city).then((city) => {
+//         createCard(city.name, city.weather[0].description, city.weather[0].main, city.weather[0].icon);
+//         const card = document.querySelector(".card");
+//         document.querySelector(".cardsWrapper").removeChild(card);
+//     });
+// });
+
