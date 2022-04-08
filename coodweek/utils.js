@@ -8,7 +8,7 @@ const createCard = (name,description,main,icon) => {
   divCard.classList.add("card");
   nameCard.classList.add("cityName");
   descriptionCard.classList.add("description");
-  imgCard.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  imgCard.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
   imgCard.classList.add("cardImg");
   mainCard.classList.add("mainCard")
 
@@ -29,6 +29,6 @@ const updateCard = (name,description,main,icon) => {
   nameCard.textContent = name;
   descriptionCard.textContent = description;
   mainCard.textContent = main;
-  imgCard.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  imgCard.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
 };
 export { createCard,updateCard };
